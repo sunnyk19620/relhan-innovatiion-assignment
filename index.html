@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JNV PANIPAT - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="user-logo">
+    <img src="nvs_logo.jpeg" id="nvs" alt="demo">
+    <h1 class="h1_heading">JNV PANIPAT</h1>
+    </div>
+    <div class="user-info">
+      <span id="user-role">Admin</span>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </header>
+
+  <nav class="side-nav">
+    <ul>
+      <li><a href="#dashboard">Dashboard</a></li>
+      <li><a href="#students">Student Profiles</a></li>
+      <li><a href="#attendance">Attendance</a></li>
+      <li><a href="#users">Manage Users</a></li>
+      <li><a href="#reports">Reports</a></li>
+      <li><a href="#notifications">Notifications</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <section id="dashboard">
+      <h2>Welcome to Admin Panel</h2>
+      <p>Manage classes, attendance, and reports here.</p>
+    </section>
+
+    <section id="students">
+      <h2>Student Profile</h2>
+      <form id="student-form">
+        <input type="text" placeholder="Full Name" required />
+        <input type="text" placeholder="Father's Name" required />
+        <input type="text" placeholder="Mother's Name" required />
+        <input type="text" placeholder="Address" required />
+        <input type="text" placeholder="Aadhar No. (Student)" required />
+        <input type="text" placeholder="Aadhar No. (Father)" />
+        <input type="text" placeholder="Aadhar No. (Mother)" />
+        <input type="text" placeholder="Admission Number" required />
+        <input type="tel" placeholder="Emergency Contact 1" required />
+        <input type="tel" placeholder="Emergency Contact 2" required />
+        <input type="text" placeholder="Guardian Details" required />
+        <label>Photo Upload</label>
+        <input type="file" />
+        <select>
+          <option value="">Select Class</option>
+          <option>6A</option>
+          <option>6B</option>
+          <option>12</option>
+        </select>
+        <select>
+          <option value="">Select House</option>
+          <option>Aravali</option>
+          <option>Nilgiri</option>
+          <option>Shivalik</option>
+        </select>
+        <button type="submit">Save Profile</button>
+      </form>
+    </section>
+
+    <section id="attendance">
+      <h2>Attendance</h2>
+      <select>
+        <option>Class 6A</option>
+        <option>Class 7B</option>
+      </select>
+      <select>
+        <option>Morning</option>
+        <option>Assembly</option>
+        <option>Regular Class</option>
+        <option>Mess</option>
+        <option>Remedial</option>
+        <option>Supervision</option>
+        <option>Dinner</option>
+        <option>Night Roll Call</option>
+      </select>
+      <button>Mark Attendance</button>
+    </section>
+
+    <section id="users">
+      <h2>Manage Users</h2>
+      <button>Add New Teacher/Admin</button>
+    </section>
+
+    <section id="reports">
+      <h2>Reports</h2>
+      <button>Download PDF</button>
+      <button>Export to Excel</button>
+    </section>
+
+    <section id="notifications">
+      <h2>Send Notification</h2>
+      <textarea placeholder="Enter your message"></textarea>
+      <button>Send to All</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 JNV PANIPAT</p>
+  </footer> -->
+</body>
+</html>
